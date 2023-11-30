@@ -1,0 +1,244 @@
+// varibles
+
+$primary-font : 'Raleway', sans-serif;
+$primary-color: #4e82be;
+$white-col: #fff;
+$black-col: #000;
+
+@mixin flex_property{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $primary-font;
+}
+html {
+    font-size: 15px;
+}
+
+.inner{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3% 1%;
+}
+
+// header start
+
+header {
+    width: 100%;
+    height: 50vh;
+    background-image: url(../images/56023288-023_1a_CadburyFC_Min2Win_Desktop_Homepage_L1440x600px_sRGB_SHJ.jpg);
+    background-size: cover;
+    text-align: center;
+    border: 10px solid $primary-color;
+
+    nav{
+        @include flex_property();
+
+        .logo{
+            font-weight: 400;
+            font-size: 1.2rem;
+        }
+
+        ul{
+            display: flex;
+
+            li{
+                list-style: none;
+                margin-left: 2rem;
+            }
+    
+        }
+
+        a{
+            color: $white-col;
+            text-decoration: none;
+            font-weight: 200;
+
+        }
+    }
+
+    .headings{
+        margin-top: 8rem;
+
+        h1{
+            color: $white-col;
+            font-weight: 100;
+            font-size: 3rem;
+        }
+
+        h6{
+            color: $white-col;
+            font-weight: 100;
+            font-size: 0.8rem;
+            margin-top: 1rem;
+
+        }
+    }
+}
+
+
+// Header ends
+
+// info section starts
+
+.flex-box{
+    @include flex_property();
+}
+
+.more{
+    width: 100px;
+    height: 45px;
+    border: 0;
+    background-color: $primary-color;
+    color: $white-col;
+    font-family: $primary-font;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.info {
+    section{
+        width: 30%;
+        padding: 20px;
+
+        h2{
+            font-weight: 300;
+            margin-bottom: 1.5rem;
+            line-height: 2rem;
+            color: $primary-color;
+        }
+
+        p{
+            font-weight: 300;
+            margin-bottom: 1.2rem;
+            line-height: 2rem;
+            color: grey;
+        }
+
+        hr{
+            width: 0.5px;
+            height: auto;
+            border: none;
+            background-color: #dfdfdf;
+        }
+    }    
+}
+
+// testitional starts
+.testimonial-wrapper{
+    width: 100%;
+    background-color: $primary-color;
+    text-align: center;
+    color: $white-col;
+
+    h2{
+        font-size: 2rem;
+        font-weight: 200;
+        margin-bottom: 1rem;
+    }
+
+    p{
+        font-size: 1rem;
+        font-weight: 200;
+        margin-bottom: 2rem;
+    }
+
+    .testimonial{
+        width: 22%;
+        border: 1px solid #a0c2e8;
+        padding: 4rem 0;
+
+        img{
+            border-radius: 100%;
+            width: 60%;
+        }
+     
+        h3{
+            font-size: 1.5rem;
+            font-weight: 200;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        h5{
+            font-size: 1.1rem;
+            font-weight: 200;
+        }
+    }
+}
+
+// tmage gallery starts
+
+.image-gallery{
+
+    h2{
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 100;
+        color: $primary-color;
+    }
+
+    h5{
+        text-align: center;
+        font-weight: 100;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+    }
+
+    .left, .right{
+        width: 47%;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    h3{
+        margin: 2rem 0;
+        font-weight: 200;
+        color: $primary-color;
+    }
+
+    p{
+        margin-bottom: 2rem;
+        line-height: 1.5rem;
+        color: grey;
+    }
+
+}
+
+// footer//
+footer{
+    @include flex_property();
+
+    .footer-hr{
+        width: 100%;
+        height: 1px;
+        margin-bottom: 3rem;
+    }
+
+    p{
+        color: gray;
+    }
+
+    span{
+        font-size: 1.5rem;
+        padding: 0 0.5rem;
+        color: $primary-color;
+    }
+}
+
+
+
+
+
+
+
+
+
+
